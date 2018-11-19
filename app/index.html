@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>米折购物</title>
+		<link rel="stylesheet" type="text/css" href="/css/index.css" />
+		<script type="text/javascript" src="/libs/require/require.js" data-main="js/index.js"></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="logo">
+			<div class="warp">
+				<a href="http://localhost:2333" class="left"></a>
+				<span class="right"></span>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="warp">
+				<ul>
+					<li>
+						<a href="javascript:;">首页</a>
+					</li>
+					<li>
+						<a href="javascript:;">品牌特卖</a>
+					</li>
+					<li>
+						<a href="javascript:;">限量购</a>
+					</li>
+					<li>
+						<a href="javascript:;">手机客户端</a>
+					</li>
+					<li>
+						<a href="javascript:;">贝贝网</a>
+					</li>
+					<li>
+						<a href="javascript:;">育儿宝</a>
+					</li>
+				</ul>
+				<span>
+					<a href="javascript:;">商家中心</a>
+				</span>
+			</div>
+		</div>
+
+		<div class="banner"></div>
+
+		<div class="content">
+			<div class="warp">
+				<dl>
+					<dt>
+						<a href="http://localhost:2333/html/details.html"><img src="/images/1.jpg" /></a>
+					</dt>
+					<dd>
+						<span class="sp1 honh">￥</span>
+						<span class="sp2 honh">18</span>
+						<span class="sp3 honh">.50</span>
+						<span class="sp4">2.7折包邮</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>
+						<a href="http://localhost:2333/html/details.html"><img src="/images/2.jpg" /></a>
+					</dt>
+					<dd>
+						<span class="sp1 honh">￥</span>
+						<span class="sp2 honh">11</span>
+						<span class="sp3 honh">.80</span>
+						<span class="sp4">0.9折包邮</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="http://localhost:2333/html/details.html"><img src="/images/3.jpg" /></a></dt>
+					<dd>
+						<span class="sp1 honh">￥</span>
+						<span class="sp2 honh">9</span>
+						<span class="sp3 honh">.50</span>
+						<span class="sp4">3.2折包邮</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="http://localhost:2333/html/details.html"><img src="/images/4.jpg" /></a></dt>
+					<dd>
+						<span class="sp1 honh">￥</span>
+						<span class="sp2 honh">10</span>
+						<span class="sp3 honh">.90</span>
+						<span class="sp4">1.8折包邮</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><a href="http://localhost:2333/html/details.html"><img src="/images/5.jpg" /></a></dt>
+					<dd>
+						<span class="sp1 honh">￥</span>
+						<span class="sp2 honh">19</span>
+						<span class="sp3 honh">.90</span>
+						<span class="sp4">4.1折包邮</span>
+					</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="content1">
+			<div class="warp">
+				<span class="sp1">今日特卖</span>
+				<span class="sp2">/</span>
+				<span class="sp3"></span>
+				<span class="sp4">本场剩余：</span>
+				<span class="sp5">17小时45分31秒</span>
+			</div>
+		</div>
+		<div class="content2">
+			<div class="warp">
+				<ul>
+					<li><a href="javascript:;">全部</a></li>
+					<li><a href="javascript:;">女装</a></li>
+					<li><a href="javascript:;">居家</a></li>
+					<li><a href="javascript:;">母婴</a></li>
+					<li><a href="javascript:;">鞋包</a></li>
+					<li><a href="javascript:;">配饰</a></li>
+					<li><a href="javascript:;">美妆</a></li>
+					<li><a href="javascript:;">热卖排行</a></li>
+					<li><a href="javascript:;" style="color:#ee4444;">9.9包邮</a></li>
+					<li><a href="javascript:;" style="color:#ee4444;">明日精选</a></li>
+				</ul>
+				<span></span>
+			</div>
+		</div>
+		
+		<div class="list">
+			<div class="warp"  id="proList"></div>
+			<script type="text/html" id="pro-template">
+			{{each products}}
+				<dl>
+					<dt><img src="/images/39.jpg"></dt>
+					<dd>
+						<span class="s1">￥</span>
+						<span class="sp2">{{$value.price}}</span>
+						<span class="sp3">.{{$value.zhekou}}0</span>
+						<span class="sp4">
+							￥{{$value.jiage}}
+						</span>
+						<span class="sp5">{{$value.ren}}人开抢</span>
+					</dd>
+				</dl>	
+			{{/each}}
+			</script>
+						
+		</div>	
+			
+			
+		
+			
+
+		
+		
+		
+		
+		
+		<div class="kong">
+			<div class="warp">
+
+			</div>
+		</div>
+
+		<footer></footer>
+	</body>
+</html>
